@@ -1,0 +1,295 @@
+/* General codes */
+* {
+    font-family: poppins;
+}
+
+* ::selection{
+    color: #8490ff;
+}
+
+body {
+    margin: 0;
+    background: white;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+p {
+    color: #777777;
+}
+
+
+/* main container */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* header styles */
+#header {
+    padding: 20px 0;
+    background-color: white;
+}
+
+/* ul edits */
+#header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+/* navbar links */
+
+#header-links li {
+    position: relative;
+}
+
+#header-links a {
+    min-width: max-content;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#header-links a:hover {
+    color: #8490ff
+}
+
+/* header container */
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu level 1 (Primary) */
+#header-links>ul>li>a:visited {
+    color: #8490ff
+}
+
+/* box Menu level 2 */
+#header-links>ul>li>ul {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 206%;
+    right: 0%;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 0 30px -3px rgba(127, 127, 127, 0.56);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+}
+
+#header-links>ul>li:hover>ul {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+#header-links>ul>li>ul a {
+    padding: 5px 90px 5px 10px;
+    display: inline-block;
+}
+
+/* Box Menu Level 3 */
+#header-links>ul>li>ul>li>ul {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 106%;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 0 30px -3px rgba(127, 127, 127, 0.56);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+}
+
+#header-links>ul>li>ul>li:hover>ul {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* this is me */
+#body1 {
+    background-color: #f9f9ff;
+
+}
+
+#body1 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#body1 .container p {
+    font-size: 13px;
+    color: #777777;
+}
+
+#body1 .container a {
+    background: linear-gradient(to right, #8490ff, #62bdfc);
+    color: white;
+    padding: 10px 21px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* body 2 */
+
+.body2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.body2 .container .text {
+    margin-right: 20px;
+    margin-top: 0%;
+}
+
+.body2 .container .image {
+    margin-left: 0%;
+}
+
+.body2 a {
+    background: linear-gradient(to right, #8490ff, #62bdfc);
+    color: white;
+    padding: 10px 27px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.body2 h1 {
+    font-size: 36px;
+}
+
+.body2 p {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #777777;
+}
+
+/* my offered services */
+
+.offer-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.offer-text h1 {
+    font-size: 36px;
+
+}
+
+/* six 6 icons */
+
+#icons .container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    padding-bottom: 50px;
+}
+
+/* icons edit */
+#icons .container .group1,
+.group2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* icons text */
+#icons p {
+    font-size: 14px;
+}
+
+#icons h1 {
+    font-size: 23px;
+}
+
+#icons h1:hover{
+    color: #8490ff;
+}
+
+#icons img:hover{
+    color: linear-gradient(to right, #8490ff, #62bdfc )
+}
+
+/* gradient color */
+
+#color-gg{
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc)
+}
+
+#color-gg .container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 90px 0;
+}
+
+#color-gg .container div{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#color-gg p{
+    color:white;
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+}
+
+#color-gg h1{
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+    display: block;
+}
+
+/* project text */
+
+#project-text{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#project-text .container{
+    padding: 60px;
+}
+
+#project-text h1{
+    font-size: 36px;
+}
